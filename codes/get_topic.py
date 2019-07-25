@@ -7,7 +7,8 @@
 
 # here put the import lib
 
-import urllib.request 
+#import urllib.request
+import requests 
 from bs4 import BeautifulSoup
 import jieba
 import jieba.analyse
@@ -28,7 +29,10 @@ def is_stop_word(s):
         return False
 
 def url2html(url):
-    html = urllib.request.urlopen(url).read()
+    #html = urllib.request.urlopen(url).read()
+    r = requests.get(url)
+    r.encoding='utf-8'
+    html = r.text
     return html
 
 def get_word_splits(html):

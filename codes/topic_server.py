@@ -27,7 +27,7 @@ app.config['JSON_AS_ASCII'] = False
 @app.route('/api/topic', methods=['GET'])
 def get_topic():
     #logging.info(request.headers)
-    #pdb.set_trace()
+    pdb.set_trace()
     url = request.args.getlist('url')[0]
     keywords = get_topic_from_url(url)
     return jsonify(keywords)
