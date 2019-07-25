@@ -16,7 +16,7 @@ RUN pip install -i http://pypi.douban.com/simple/ --trusted-host pypi.douban.com
     pip install -i http://pypi.douban.com/simple/ --trusted-host pypi.douban.com beautifulsoup4==4.8.0 && \
     pip install -i http://pypi.douban.com/simple/ --trusted-host pypi.douban.com zhon==1.1.5 && \
     pip install -i http://pypi.douban.com/simple/ --trusted-host pypi.douban.com jieba==0.39 && \
-    pip install -i http://pypi.douban.com/simple/ --trusted-host pypi.douban.com requests=2.22.0
+    pip install -i http://pypi.douban.com/simple/ --trusted-host pypi.douban.com requests==2.22.0
 
 
 ADD ./codes /opt/topic-model/codes
